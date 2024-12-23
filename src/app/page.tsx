@@ -17,7 +17,7 @@ export default function IndexPage() {
                 moduleKey={module.key}
                 title={module.title}
                 description={module.description}
-                path={`tools/${module.path}`}
+                path={`/tools/${module.path}`}
                 icon={module.icon}
               />
             </Col>
