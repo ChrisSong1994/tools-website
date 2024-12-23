@@ -1,23 +1,22 @@
 # 拷贝build 资源到镜像，并启动
-FROM --platform=linux/amd64 node:20
+FROM  node:20
 
 # 创建工作目录
 WORKDIR /usr/src/app
 
-# 复制public  、package.json到镜像并安装
-COPY package.json yarn.lock*  ./
-RUN yarn install --frozen-lockfile
-
-# 复制其他文件到镜像
-COPY src ./src
+# copy file
 COPY public ./public
+COPY src ./src
 COPY next.config.mjs .
 COPY tsconfig.json .
 COPY index.d.ts .
+COPY package.json  .
+# 安装依赖
+RUN npm install --resistry=https://registry.npmmirror.com/
 
 # 构建
-RUN yarn build
+RUN npm run build
 
 # 启动
-EXPOSE 3000
-CMD [ "yarn", "start" ]
+EXPOSE 3000:3000
+CMD [ "npm", "start" ]
