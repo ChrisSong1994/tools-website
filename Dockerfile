@@ -5,12 +5,8 @@ FROM  node:20
 WORKDIR /usr/src/app
 
 # copy file
-COPY public ./public
-COPY src ./src
-COPY next.config.mjs .
-COPY tsconfig.json .
-COPY index.d.ts .
-COPY package.json  .
+COPY . .
+
 # 安装依赖
 RUN npm install --resistry=https://registry.npmmirror.com/
 
