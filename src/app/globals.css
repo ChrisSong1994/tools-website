@@ -1,1 +1,19 @@
-@import url('../styles/index.css');
+@import url("../styles/index.css");
+
+.tools-cards {
+  .tip {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 4px;
+        height: 16px;
+        margin-right: 4px;
+        background-color: var(--primary-color);
+    }
+  }
+}

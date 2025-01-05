@@ -1,5 +1,6 @@
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Layout from "@/layouts";
+import "./globals.css";
 
 export const metadata = {
   title: "吐司工具",

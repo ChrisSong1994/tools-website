@@ -14,6 +14,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ConfigProvider
       theme={{
+        cssVar:true,
         token: {
           // Seed Token，影响范围大
           colorPrimary: PRIMARY_COLOR,

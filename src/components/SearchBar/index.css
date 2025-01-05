@@ -1,3 +1,8 @@
+:root {
+  --input-border-color: rgba(29, 46, 84, 0.5);
+  --input-placeholder-color: rgba(29, 46, 84, 0.5);
+}
+
 .tools-search-bar {
   position: relative;
   margin-right: 20px;
@@ -10,7 +15,7 @@
   padding-inline-end: 12px;
   color: #30363f;
   font-size: 14px;
-  border: 1px solid #d0d5d8;
+  border: 1px solid var(--input-border-color);
   border-radius: 8px;
   box-sizing: border-box;
   transition: all 0.3s;
@@ -26,12 +31,12 @@
     margin-top: 1px;
     inset-inline-start: 16px;
     width: 16px;
-    fill: #8a9099;
+    fill: var(--input-placeholder-color);
     transform: translateY(-50%);
   }
 
   .tools-search-bar-placeholder {
-    color: #8a9099;
+    color: var(--input-placeholder-color);
   }
 
   .tools-search-shortcut {
@@ -40,7 +45,7 @@
     inset-inline-end: 11px;
     display: inline-block;
     padding: 4px 8px;
-    color: #8a9099;
+    color: var(--input-placeholder-color);
     font-size: 12px;
     line-height: 1;
     white-space: nowrap;

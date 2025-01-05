@@ -49,7 +49,7 @@ export const ToolComponent = (props: ToolComponentProps) => {
           </Button>
         </div>
 
-        <p className="tools-module-desc"> {description} </p>
+        {/* <p className="tools-module-desc"> {description} </p> */}
         <div className="tools-module-container">{children}</div>
       </div>
     </section>
