@@ -14,15 +14,15 @@ yarn dev
 ```bash
 
 # 构建镜像
-docker build -t tools-website:v1 .
+docker build --platform linux/amd64  -t tools-website:latest . --no-cache
 # 到处镜像到压缩文件
 docker save -o tools-website.tar tools-website
 # 创建容器
-docker run -it --name tools-website  tools-website:v1
+docker run -it --name tools-website  tools-website:latest
 # login
 docker login
 # tag
-docker tag tools-website:v1.5 chrissong1994/tools-website:v1.5
+docker tag tools-website:latest chrissong1994/tools-website:latest
 # push 
-docker psuh chrissong1994/tools-website:v1.5
+docker push chrissong1994/tools-website:latest
 ```
