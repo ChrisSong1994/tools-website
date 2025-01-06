@@ -19,10 +19,8 @@ export interface ToolComponentProps {
  * 页面布局和面包屑，回到上一层等等基本能力
  */
 export const ToolComponent = (props: ToolComponentProps) => {
-  const { title, description, children, moduleKey } = props;
-
+  const { title, children, moduleKey } = props;
   const { isCollected, onCollection } = useCollection(moduleKey);
-
   const handleCollected = (e: MouseEvent) => {
     e.preventDefault();
     onCollection();
@@ -48,8 +46,6 @@ export const ToolComponent = (props: ToolComponentProps) => {
             收藏
           </Button>
         </div>
-
-        {/* <p className="tools-module-desc"> {description} </p> */}
         <div className="tools-module-container">{children}</div>
       </div>
     </section>

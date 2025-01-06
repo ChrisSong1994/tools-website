@@ -11,8 +11,8 @@ const Header = () => {
           className="tools-header-logo"
           src="/logo.png"
           alt="Toast Tools Logo"
-          width={36}
-          height={36}
+          width={32}
+          height={32}
         />
         <h1 className="tools-header-title">吐司工具</h1>
       </Link>

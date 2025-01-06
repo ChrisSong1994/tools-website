@@ -113,7 +113,7 @@ export const moduleConfig: ModuleConfig = {
   [TOOLS_KEY_ENUM.RandomGenerator]: {
     key: TOOLS_KEY_ENUM.RandomGenerator,
     title: '随机端口生成器',
-    description: '随机生成1024-65535的随机端口号(可用于生成min-max的随机整数)',
+    description: '随机生成1024-65535的随机端口号',
     path: 'random-generator',
     icon: <MinusOutlined />,
     keywords: ['random', '随机生成'],
@@ -202,7 +202,7 @@ export const moduleConfig: ModuleConfig = {
     key: TOOLS_KEY_ENUM.UrlParse,
     title: 'URL 解析',
     description:
-      '解析url字符串以获取所有不同的部分（协议、来源、参数、端口、用户名密码…）',
+      '解析url字符串以获取所有不同的部分（协议、来源、参数...）',
     path: 'url-parse',
     icon: <UrlOutlined />,
     keywords: ['url'],

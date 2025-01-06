@@ -121,7 +121,7 @@ const Json = () => {
         <JsonEditor
           error={parseError}
           onErrorClose={() => setParseError(null)}
-          style={{ height: "calc(100vh - 250px)" }}
+          style={{ height: "calc(100vh - 196px)" }}
           value={storeData.value}
           onChange={handleValueChange}
         />

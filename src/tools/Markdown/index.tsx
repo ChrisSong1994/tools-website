@@ -30,12 +30,10 @@ const plugins = [
   math({ locale: MATH_ZH }),
   mediumZoom(),
   mermaid({ locale: MERMAID_ZH }),
-  // Add more plugins here
 ];
 
 const Markdown = () => {
   const [value, setValue] = useState(MARKDOWN_TEXT);
-
   return (
     <section className="tools-markdown">
       <Editor

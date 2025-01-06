@@ -4,6 +4,7 @@ import { Col, Row } from "antd";
 import ToolCard from "@/components/ToolCard";
 import { moduleConfig } from "@/components/ToolModule/config";
 // import { useToolsModules } from '@/hooks';
+import "@/tools";
 
 export default function IndexPage() {
   // const ToolsModules = useToolsModules();
@@ -13,7 +14,7 @@ export default function IndexPage() {
       <Row gutter={[16, 16]}>
         {Object.values(moduleConfig).map((module) => {
           return (
-            <Col key={module.key} span={6}>
+            <Col key={module.key} xs={12} sm={12} md={8} lg={8} xl={6} xxl={4}>
               <ToolCard
                 moduleKey={module.key}
                 title={module.title}

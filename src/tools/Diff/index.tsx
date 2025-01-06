@@ -29,7 +29,7 @@ const Diff = () => {
       </div>
       <BaseDiffEditor
         tipShow={true}
-        style={{ height: "calc(100vh - 250px)" }}
+        style={{ height: "calc(100vh - 196px)" }}
         language={language}
       />
     </Fragment>

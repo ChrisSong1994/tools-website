@@ -7,7 +7,7 @@
   --icon-hover-color: #eef1f4;
   --footer-color: rgba(29, 46, 84, 0.5);
   --sider-width: 220px;
-  --header-height: 60px;
+  --header-height: 50px;
   --footer-height: 34px;
   --content-hight: calc(100vh - var(--header-height) - var(--footer-height));
 }

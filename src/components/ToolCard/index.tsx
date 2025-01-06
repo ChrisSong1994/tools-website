@@ -1,8 +1,6 @@
 'use client';
-
 import { StarFilled, StarOutlined } from '@ant-design/icons';
-import { Card } from 'antd';
-import React, { useEffect } from 'react';
+import Card from 'antd/es/card';
 import Link from 'next/link'
 
 import { useCollection } from '@/hooks';
@@ -23,10 +21,6 @@ const ToolCard = (props: ToolCardProps) => {
     e.preventDefault();
     onCollection();
   };
-
-  useEffect(()=>{
-    
-  })
 
   return (
     <Link href={path}>
